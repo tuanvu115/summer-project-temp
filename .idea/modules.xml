@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application/posting-transaction-service.application.main.iml" filepath="$PROJECT_DIR$/.idea/modules/application/posting-transaction-service.application.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/posting-transaction-service.domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/posting-transaction-service.domain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infrastructure/posting-transaction-service.infrastructure.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infrastructure/posting-transaction-service.infrastructure.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/posting-transaction-service.presentation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/posting-transaction-service.presentation.main.iml" />
+    </modules>
+  </component>
+</project>

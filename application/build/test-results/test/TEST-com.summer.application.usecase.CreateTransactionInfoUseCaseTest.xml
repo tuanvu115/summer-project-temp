@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Create Transaction Use Case Tests" tests="17" skipped="0" failures="5" errors="0" timestamp="2026-01-04T12:16:20.897Z" hostname="192.168.1.91" time="0.938">
+  <properties/>
+  <testcase name="Should create transaction successfully" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.845">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null
+	at com.summer.application.usecase.CreateTransactionUseCase.execute(CreateTransactionUseCase.java:46)
+	at com.summer.application.usecase.CreateTransactionInfoUseCaseTest.shouldCreateTransactionSuccessfully(CreateTransactionInfoUseCaseTest.java:92)
+</failure>
+  </testcase>
+  <testcase name="Should create transaction with null metadata - should set to empty map" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.006">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null
+	at com.summer.application.usecase.CreateTransactionUseCase.execute(CreateTransactionUseCase.java:46)
+	at com.summer.application.usecase.CreateTransactionInfoUseCaseTest.shouldCreateTransactionWithNullMetadata(CreateTransactionInfoUseCaseTest.java:169)
+</failure>
+  </testcase>
+  <testcase name="Should throw exception when relation number is null" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.021"/>
+  <testcase name="Should create transaction with valid amount with 2 decimal places" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.006">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null
+	at com.summer.application.usecase.CreateTransactionUseCase.execute(CreateTransactionUseCase.java:46)
+	at com.summer.application.usecase.CreateTransactionInfoUseCaseTest.shouldCreateTransactionWithValidAmountWith2DecimalPlaces(CreateTransactionInfoUseCaseTest.java:444)
+</failure>
+  </testcase>
+  <testcase name="Should throw exception when amount is negative" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.005"/>
+  <testcase name="Should throw exception when amount is null" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.005"/>
+  <testcase name="Should throw exception when amount is zero" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should throw exception when currency is empty" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should throw exception when relation number is empty" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should create transaction with null trxDate - should set to current date" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.004">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null
+	at com.summer.application.usecase.CreateTransactionUseCase.execute(CreateTransactionUseCase.java:46)
+	at com.summer.application.usecase.CreateTransactionInfoUseCaseTest.shouldCreateTransactionWithNullTrxDate(CreateTransactionInfoUseCaseTest.java:133)
+</failure>
+  </testcase>
+  <testcase name="Should throw exception when transaction type is null" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.004"/>
+  <testcase name="Should throw exception when currency is not 3 characters" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should create transaction with relation number at max length (20 characters)" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.007">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.summer.domain.event.TransactionEventPublisher.publishTransactionCreated(com.summer.domain.model.TransactionInfo)&quot; because &quot;this.transactionEventPublisher&quot; is null
+	at com.summer.application.usecase.CreateTransactionUseCase.execute(CreateTransactionUseCase.java:46)
+	at com.summer.application.usecase.CreateTransactionInfoUseCaseTest.shouldCreateTransactionWithMaxLengthRelationNo(CreateTransactionInfoUseCaseTest.java:477)
+</failure>
+  </testcase>
+  <testcase name="Should throw exception when domain is null" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.004"/>
+  <testcase name="Should throw exception when amount has more than 2 decimal places" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should throw exception when relation number exceeds 20 characters" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.003"/>
+  <testcase name="Should throw exception when currency is null" classname="com.summer.application.usecase.CreateTransactionInfoUseCaseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/myrddin/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

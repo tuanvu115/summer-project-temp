@@ -1,0 +1,26 @@
+
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':application')
+
+    // Spring
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    // Spring Data JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // Kafka messaging
+    implementation 'org.springframework.boot:spring-boot-starter-kafka'
+
+    // Jackson for JSON metadata handling
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+    // Test dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
+    testRuntimeOnly 'com.h2database:h2'
+
+}

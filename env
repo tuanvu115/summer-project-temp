@@ -1,0 +1,43 @@
+# ============================================================================
+# Posting Transaction Service - Environment Configuration
+# ============================================================================
+# Default configuration for local development
+# ============================================================================
+
+# ============================================================================
+# SERVER CONFIGURATION
+# ============================================================================
+SERVER_PORT=8080
+CONTEXT_PATH=/posting-transaction/api/v1
+
+# ============================================================================
+# DATABASE CONFIGURATION (PostgreSQL)
+# ============================================================================
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=transactions_db
+DB_USER=dbuser
+DB_PASSWORD=dbpassword
+
+# Database Connection Pool
+DB_POOL_MAX=10
+DB_POOL_MIN=5
+
+# JPA/Hibernate Settings
+JPA_DDL_AUTO=update
+JPA_SHOW_SQL=true
+
+# ============================================================================
+# KAFKA CONFIGURATION
+# ============================================================================
+KAFKA_BOOTSTRAP_SERVERS=localhost:9092
+KAFKA_CONSUMER_GROUP=posting-transaction-service
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+LOG_LEVEL_ROOT=INFO
+LOG_LEVEL_APP=DEBUG
+LOG_LEVEL_WEB=DEBUG
+LOG_LEVEL_SQL=DEBUG
+LOG_LEVEL_SQL_BIND=TRACE

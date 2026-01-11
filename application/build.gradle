@@ -1,0 +1,16 @@
+dependencies {
+    implementation project(':domain')
+    
+    // Using compileOnly to avoid coupling application layer to Spring
+    compileOnly 'org.springframework:spring-context'
+
+    // MapStruct for object mapping
+    implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+
+    // Test dependencies - NO Spring, use Mockito for mocking
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.8.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}

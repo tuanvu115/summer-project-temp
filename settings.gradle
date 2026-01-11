@@ -1,0 +1,6 @@
+rootProject.name = 'posting-transaction-service'
+
+include 'domain'
+include 'application'
+include 'infrastructure'
+include 'presentation'
